@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YSK</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Oswald', sans-serif;
+}
+
+body{
+    background:#0a0a0a;
+    color:white;
+}
+
+nav{
+    background:#111;
+    padding:18px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #222;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    letter-spacing:4px;
+}
+
+nav a{
+    color:#ccc;
+    text-decoration:none;
+    font-size:15px;
+}
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero img{
+    width:220px;
+    margin-bottom:25px;
+    border-radius:10px;
+}
+
+.hero h1{
+    font-size:95px;
+    letter-spacing:8px;
+}
+
+.hero p{
+    color:#999;
+    margin-top:8px;
+    font-size:18px;
+}
+
+.join-btn{
+    margin-top:30px;
+    padding:14px 40px;
+    background:white;
+    color:black;
+    border:none;
+    font-size:16px;
+    cursor:pointer;
+    border-radius:4px;
+    transition:.2s;
+    font-weight:700;
+}
+
+.join-btn:hover{
+    background:#dcdcdc;
+}
+
+.shop{
+    padding:70px 20px;
+    text-align:center;
+}
+
+.shop h2{
+    font-size:42px;
+    margin-bottom:40px;
+    letter-spacing:3px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#111;
+    border:1px solid #2b2b2b;
+    width:250px;
+    padding:30px 20px;
+    border-radius:8px;
+}
+
+.card h3{
+    font-size:26px;
+}
+
+.price{
+    font-size:38px;
+    margin:15px 0;
+    color:white;
+}
+
+.card button{
+    margin-top:15px;
+    padding:12px 30px;
+    background:white;
+    color:black;
+    border:none;
+    cursor:pointer;
+    border-radius:4px;
+    font-weight:700;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#777;
+    border-top:1px solid #1f1f1f;
+    margin-top:40px;
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">YSK</div>
+    <a href="#">ROBLOX GROUP</a>
+</nav>
+
+<section class="hero">
+
+<div>
+
+<img src="data:image/png;base64,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">
+
+<h1>YSK</h1>
+<p>roblox organization</p>
+
+<a href="https://discord.gg/nB6dqQpXUr" target="_blank">
+<button class="join-btn">JOIN YSK</button>
+</a>
+
+</div>
+
+</section>
+
+<section class="shop">
+
+<h2>STORE</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>TURF ACCESS</h3>
+<div class="price">50 R$</div>
+<button>BUY</button>
+</div>
+
+<div class="card">
+<h3>MEMBER</h3>
+<div class="price">90 R$</div>
+<button>BUY</button>
+</div>
+
+<div class="card">
+<h3>VIP</h3>
+<div class="price">150 R$</div>
+<button>BUY</button>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+YSK © 2026
+</footer>
+
+</body>
+</html>
